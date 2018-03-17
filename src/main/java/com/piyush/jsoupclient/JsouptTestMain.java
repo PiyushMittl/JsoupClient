@@ -22,7 +22,7 @@ public class JsouptTestMain {
 		System.out.println(loginForm.cookies());
 
 		Connection.Response indexResponse = Jsoup.connect("http://192.168.110.61/index.php").data("username", "admin")
-				.data("password", "AtinAgarwal123").data("_submit_check", "1").cookies(loginForm.cookies())
+				.data("password", "XXX").data("_submit_check", "1").cookies(loginForm.cookies())
 				.method(Connection.Method.POST).execute();
 
 		// System.out.println(indexResponse.body());
